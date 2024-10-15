@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #35424a;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#projetos ul, #habilidades ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#projetos li, #habilidades li {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#projetos h4, #habilidades h4 {
+    color: red;
+}
+
+.sobre-menu:hover, .habilidades-menu:hover, .projetos-menu:hover, .contato-menu:hover {
+    background: #5a5e66;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #5a5e66;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #63E6BE;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-box {
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+    }
+}

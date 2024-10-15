@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Meu Portfólio</title>
+    <script src="https://kit.fontawesome.com/0869671a59.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./src/js/Utils.js"></script>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3094/3094384.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Olá, eu sou Saulo Morais</h1>
+        <p>Desenvolvedor Web apaixonado por tecnologia e inovação.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a class="sobre-menu">Sobre Mim</a></li>
+            <li><a class="habilidades-menu">Habilidades</a></li>
+            <li><a class="projetos-menu">projetos</a></li>
+            <!-- <li><a class="contato-menu" href="#contato">Contato</a></li> -->
+        </ul>
+    </nav>
+    
+    <section id="sobre" class="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor com experiência em diversas tecnologias. Gosto de criar soluções inovadoras e eficientes, sempre buscando aprendizado contínuo e novos desafios.</p>
+    </section>
+
+    <section id="habilidades" class="habilidades hidden">
+        <h2>Minhas Habilidades</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Git</li>
+        </ul>
+    </section>
+
+    <section id="projetos" class="projetos hidden">
+        <h2>Projetos</h2>
+        <ul>
+            <li>
+                <h4>Em breve!</h4>
+                <p>Site de venda de imagens</p>
+                <img src="https://isagebrum.com/images/technology/python-image.svg" height="60px" alt="">
+                <br>
+                <small><strong>Tecnologia:</strong> Python | <strong>Framework:</strong>Django</small>
+            </li>
+
+            <li>
+                <h4>Em breve!</h4>
+                <p>Jogo em JavaScript Vanilla</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" height="60px" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4NKugBfmlfkaZ4lnaYXLv2ALyoQTPY3GdbQ&s" height="60px" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" height="60px" alt="">
+                <br>
+                <small><strong>Tecnologia:</strong> HTML5 - CSS3 - JavaScript | <strong>Framework:</strong>None</small>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <h3><a href="https://wa.me/qr/ADJPBWX6RRFOD1"><i class="fa-brands fa-square-whatsapp" style="color: #63E6BE;"></i> Whatsapp</a></h3>
+        <h2>Ou</h2>
+        <form id="contatoForm">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <small style="color: rgb(8, 152, 8); padding: 10px 0;"><strong>Obs: </strong>Deixe seu <strong>contato</strong> como <strong>telefone/whatsapp</strong> em sua mensagem também, para entrar em contato com você!</small>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Saulo Morais. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
